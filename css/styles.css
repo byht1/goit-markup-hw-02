@@ -1,7 +1,8 @@
 :root {
     --logo-color: #2196F3;
     --text-header: #212121;  /* текст заголовков */
-    --main-color: #757575
+    --main-color: #757575;
+    --msin-text: #ffffff;
 }
 body{
     background-color: #E5E5E5;
@@ -15,7 +16,10 @@ ul {
     list-style-type: none;
 }
 
-/* Шапка or */
+/* Шапка or header*/
+.header {
+    background-color: var(--msin-text);
+}
 /* Логотип */
 .logo {
     font-family: Raleway, sans-serif;
@@ -34,7 +38,7 @@ ul {
 .header .web-pages a {
     font-weight: 500;
     font-size: 14px;
-    line-height: 0.88;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #000000;
 }
@@ -55,4 +59,99 @@ ul {
 }
 .contact a:focus{
     color: var(--logo-color);
+}
+
+/* Главный контент or main */
+/* Герой or hero */
+.hero {
+    background-color: #2F303A;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--msin-text);
+}
+
+.button {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--msin-text);
+    background-color: var(--logo-color);
+}
+
+/* Преимущества or Benefist */
+.benefist h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.team p,
+.address,
+.benefist p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+/* Вид деятельность or Activity */
+
+/* Команда or team */
+.team {
+    text-align: center;
+    background-color: #F5F4FA;
+}
+.team h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+/* Подвал or footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer .logo {
+    color: var(--msin-text);
+}
+
+.address {
+    color: var(--msin-text);
+}
+/* Контакти */
+.footer .mail {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6)
+}
+.footer .tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
